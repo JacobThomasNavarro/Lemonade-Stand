@@ -12,8 +12,10 @@ namespace LemonadeStand
         private double money;
 
         // constructor
-
-
+        public Wallet()
+        {
+            money = 20.00;
+        }
         // member methods (CAN DO)
 
 

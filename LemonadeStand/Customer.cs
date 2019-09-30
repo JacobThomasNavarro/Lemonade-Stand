@@ -13,7 +13,10 @@ namespace LemonadeStand
         public string name;
 
         // constructor
-
+        public Customer()
+        {
+            names = new List<string>() { "Bill", "Bob", "Cheryl", "George","Marie", "Fred", "Tom", "Jake" };
+        }
 
         // member methods (CAN DO)
 

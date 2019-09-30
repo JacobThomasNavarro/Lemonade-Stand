@@ -17,10 +17,17 @@ namespace LemonadeStand
         public double businessProfits;
 
         // constructor
+        public Player()
+        {
 
+        }
 
         // member methods (CAN DO)
-
+        public void ChooseName()
+        {
+            Console.WriteLine("Player choose a name!");
+            name = Console.ReadLine();
+        }
 
     }
 }

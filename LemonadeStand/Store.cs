@@ -15,7 +15,30 @@ namespace LemonadeStand
 
 
         // member methods (CAN DO)
+        public void BuyCups()
+        {
+            Console.WriteLine("How many Cups would you like to purchase?");
+            string gesture = Console.ReadLine();
 
+            switch (gesture)
+            {
+                case "rock":
+                    Console.WriteLine("Humany player chose " + gesture);
+                    break;
+                case "paper":
+                    Console.WriteLine("Humany player chose " + gesture);
+                    break;
+                case "scissors":
+                    Console.WriteLine("Humany player chose " + gesture);
+                    break;
+                case "lizard":
+                    Console.WriteLine("Humany player chose " + gesture);
+                    break;
+                case "spock":
+                    Console.WriteLine("Humany player chose " + gesture);
+                    break;
+            }
+        }
 
     }
 }
