@@ -9,7 +9,7 @@ namespace LemonadeStand
     class Item
     {
         // member variables (HAS A)
-
+        public string name;
 
         // constructor
 

@@ -9,7 +9,10 @@ namespace LemonadeStand
     class Recipe
     {
         // member variables (HAS A)
-
+        public int amountOfLemons;
+        public int amountOfSugarCubes;
+        public int amountOfIceCubes;
+        public double pricePerCup;
 
         // constructor
 

@@ -9,7 +9,9 @@ namespace LemonadeStand
     class Game
     {
         // member variables (HAS A)
-
+        Player player;
+        List<Day> days;
+        int currentDay;
 
         // constructor
 

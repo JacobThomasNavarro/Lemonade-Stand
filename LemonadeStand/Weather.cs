@@ -9,7 +9,10 @@ namespace LemonadeStand
     class Weather
     {
         // member variables (HAS A)
-
+        public string condition;
+        public int temperature;
+        private List<string> weatherConditions;
+        public string predicatedForecast;
 
         // constructor
 

@@ -9,7 +9,8 @@ namespace LemonadeStand
     class Customer
     {
         // member variables (HAS A)
-
+        private List<string> names;
+        public string name;
 
         // constructor
 

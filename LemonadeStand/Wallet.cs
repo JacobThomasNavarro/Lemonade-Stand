@@ -9,7 +9,7 @@ namespace LemonadeStand
     class Wallet
     {
         // member variables (HAS A)
-
+        private double money;
 
         // constructor
 
