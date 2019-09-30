@@ -8,5 +8,14 @@ namespace LemonadeStand
 {
     class Recipe
     {
+        // member variables (HAS A)
+
+
+        // constructor
+
+
+        // member methods (CAN DO)
+
+
     }
 }

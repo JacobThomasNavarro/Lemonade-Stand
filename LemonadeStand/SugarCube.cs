@@ -8,5 +8,14 @@ namespace LemonadeStand
 {
     class SugarCube
     {
+        // member variables (HAS A)
+
+
+        // constructor
+
+
+        // member methods (CAN DO)
+
+
     }
 }

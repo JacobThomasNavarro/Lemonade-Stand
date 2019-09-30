@@ -8,5 +8,14 @@ namespace LemonadeStand
 {
     class Player
     {
+        // member variables (HAS A)
+
+
+        // constructor
+
+
+        // member methods (CAN DO)
+
+
     }
 }

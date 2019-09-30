@@ -8,5 +8,14 @@ namespace LemonadeStand
 {
     class Cup
     {
+        // member variables (HAS A)
+
+
+        // constructor
+
+
+        // member methods (CAN DO)
+
+
     }
 }

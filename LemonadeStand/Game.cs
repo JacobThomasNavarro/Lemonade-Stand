@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Item
+    class Game
     {
         // member variables (HAS A)
 
@@ -15,7 +15,7 @@ namespace LemonadeStand
 
 
         // member methods (CAN DO)
-
+        
 
     }
 }
