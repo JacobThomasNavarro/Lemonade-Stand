@@ -9,14 +9,15 @@ namespace LemonadeStand
     class Game
     {
         // member variables (HAS A)
-        Player player;
+        public Player playerOne;
+        public Player playerTwo;
         List<Day> days;
         int currentDay;
 
         // constructor
         public Game()
         {
-
+  
         }
         
         // member methods (CAN DO)
@@ -24,7 +25,14 @@ namespace LemonadeStand
         {
             DisplayRules();
 
+            int numberOfPlayers = GetNumberOfPlayers();
 
+            CreatePlayers(numberOfPlayers);
+
+            playerOne.ChooseName();
+
+            PlayTime();
+            
         }
         public void DisplayRules()
         {
@@ -34,7 +42,20 @@ namespace LemonadeStand
         }
         public void PlayTime()
         {
-            Console.WriteLine("You will be playing for 7 days.");
+            Console.WriteLine("Your 7 days of business start now. Good luck!");
+        }
+        public int GetNumberOfPlayers()
+        {
+            Console.WriteLine("How many players?");
+            int numberOfPlayers = int.Parse(Console.ReadLine());
+            return numberOfPlayers;
+        }
+        public void CreatePlayers(int numberOfPlayers)
+        {
+            if (numberOfPlayers == 1)
+            {
+                playerOne = new Player();
+            }
         }
     }
 }

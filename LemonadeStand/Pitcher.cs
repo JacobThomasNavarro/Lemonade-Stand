@@ -12,7 +12,10 @@ namespace LemonadeStand
         public int cupsLeftInPitcher;
 
         // constructor
+        public Pitcher()
+        {
 
+        }
 
         // member methods (CAN DO)
 

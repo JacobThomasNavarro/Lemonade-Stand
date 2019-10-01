@@ -25,7 +25,7 @@ namespace LemonadeStand
         // member methods (CAN DO)
         public void ChooseName()
         {
-            Console.WriteLine("Player choose a name!");
+            Console.WriteLine("Player choose a name.");
             name = Console.ReadLine();
         }
 
