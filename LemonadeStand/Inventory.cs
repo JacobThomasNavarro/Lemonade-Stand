@@ -9,29 +9,36 @@ namespace LemonadeStand
     class Inventory
     {
         // member variables (HAS A)
-        public int lemons;
-        public int iceCubes;
-        public int cups;
-        public int sugarCubes;
+        public List<Lemon> lemons;
+        public List<IceCube> iceCubes;
+        public List<Cup> cups;
+        public List<SugarCube> sugarCubes;
 
         // constructor
         public Inventory()
         {
-            lemons = 0;
-            iceCubes = 0;
-            cups = 0;
-            sugarCubes = 0;
+            lemons = new List<Lemon>() { };
+            iceCubes = new List<IceCube>() { };
+            cups = new List<Cup>() { };
+            sugarCubes = new List<SugarCube>() { };
         }
 
         // member methods (CAN DO)
-        public void DisplayInventory()
+        
+
+        public void ChooseMenuOption()
         {
-            Console.WriteLine("Current Inventory: ");
-            Console.WriteLine("You have " + lemons + " Lemons");
-            Console.WriteLine("You have " + iceCubes + " IceCubes");
-            Console.WriteLine("You have " + cups + " Cups");
-            Console.WriteLine("You have " + sugarCubes + "SugarCubes");
-            Console.ReadLine();
+         
+            int choice = UserInterface.GetMenuOption();
+            switch (choice)
+            {
+                case 1:
+                    // Do this shit
+                    break;
+                case 2:
+                    //do this
+                    break;
+            }
         }
 
     }

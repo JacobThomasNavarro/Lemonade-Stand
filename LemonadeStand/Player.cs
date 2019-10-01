@@ -19,7 +19,7 @@ namespace LemonadeStand
         // constructor
         public Player()
         {
-
+            inventory = new Inventory();
         }
 
         // member methods (CAN DO)
