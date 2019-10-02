@@ -20,6 +20,7 @@ namespace LemonadeStand
         public Player()
         {
             inventory = new Inventory();
+            wallet = new Wallet();
         }
 
         // member methods (CAN DO)

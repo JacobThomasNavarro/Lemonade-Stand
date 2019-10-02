@@ -35,7 +35,8 @@ namespace LemonadeStand
 
             UserInterface.DisplayInventory(playerOne.inventory);
 
-
+            store = new Store(playerOne);
+            store.TheStore();
         }
         public int GetNumberOfPlayers()
         {

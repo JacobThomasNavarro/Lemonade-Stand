@@ -10,14 +10,25 @@ namespace LemonadeStand
     {
         // member variables (HAS A)
         private double money;
+        // write a property here to access private money
 
+        public double Money
+        {
+            get
+            {
+                return money;
+            }
+            set
+            {
+                money = value;
+            }
+        }
         // constructor
         public Wallet()
         {
             money = 20.00;
         }
         // member methods (CAN DO)
-
 
     }
 }

@@ -8,9 +8,13 @@ namespace LemonadeStand
 {
     static class UserInterface
     {
+        public static void GetUserInput()
+        {
+            Console.WriteLine("What would you like to do");
+        }
         public static int GetMenuOption()
         {
-            Console.WriteLine("Choose an option 1) Lemons\n2)Ice");
+            Console.WriteLine("Choose an option\n1)Cups\n2)Lemon\n3)Sugar\n4)Ice");
             int choice = Int32.Parse(Console.ReadLine());
             return choice;
         }
