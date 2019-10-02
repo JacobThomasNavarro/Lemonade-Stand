@@ -15,7 +15,7 @@ namespace LemonadeStand
 
 
         // member methods (CAN DO)
-        public void BuyCups()
+        public void BuyCups(Player player)
         {
             Console.WriteLine("How many Cups would you like to purchase?");
             Console.WriteLine("25 paper cups for $0.77");
@@ -27,15 +27,122 @@ namespace LemonadeStand
             {
                 case "25":
                     Console.WriteLine("Adding 25 paper cups.");
+                    for (int i = 0; i < 25; i++)
+                    {
+                        player.inventory.cups.Add(new Cup());
+                    }
                     break;
                 case "50":
-                    Console.WriteLine("Adding 50 paper cups.");
+                    for (int i = 0; i < 50; i++)
+                    {
+                        player.inventory.cups.Add(new Cup());
+                    }
                     break;
                 case "100":
-                    Console.WriteLine("Adding 100 paper cups.");
+                    for (int i = 0; i < 100; i++)
+                    {
+                        player.inventory.cups.Add(new Cup());
+                    }
                     break;
             }
         }
+        public void BuyLemons(Player player)
+        {
+            Console.WriteLine("How many Lemons would you like to purchase?");
+            Console.WriteLine("10 lemons for $0.60");
+            Console.WriteLine("30 paper cups for $2.27");
+            Console.WriteLine("75 paper cups for $4.37");
+            string lemons = Console.ReadLine();
 
+            switch (lemons)
+            {
+                case "10":
+                    Console.WriteLine("Adding 10 lemons.");
+                    for (int i = 0; i < 10; i++)
+                    {
+                        player.inventory.lemons.Add(new Lemon());
+                    }
+                    break;
+                case "30":
+                    Console.WriteLine("Adding 30 lemons.");
+                    for (int i = 0; i < 30; i++)
+                    {
+                        player.inventory.lemons.Add(new Lemon());
+                    }
+                    break;
+                case "75":
+                    Console.WriteLine("Adding 75 lemons.");
+                    for (int i = 0; i < 75; i++)
+                    {
+                        player.inventory.lemons.Add(new Lemon());
+                    }
+                    break;
+            }
+        }
+        public void BuySugar(Player player)
+        {
+            Console.WriteLine("How many SugarCubes would you like to purchase?");
+            Console.WriteLine("8 cups of sugar for $0.64");
+            Console.WriteLine("20 cups of sugar for $1.66");
+            Console.WriteLine("48 cups of sugar for $3.45");
+            string sugar = Console.ReadLine();
+
+            switch (sugar)
+            {
+                   case "8":
+                        Console.WriteLine("Adding 8 cups of sugar.");
+                        for (int i = 0; i < 8; i++)
+                        {
+                            player.inventory.sugarCubes.Add(new SugarCube());
+                        }
+                        break;
+                    case "20":
+                        Console.WriteLine("Adding 20 cups of sugar.");
+                        for (int i = 0; i < 20; i++)
+                        {
+                            player.inventory.sugarCubes.Add(new SugarCube());
+                        }
+                        break;
+                    case "48":
+                        Console.WriteLine("Adding 48 cups of sugar.");
+                        for (int i = 0; i < 48; i++)
+                        {
+                            player.inventory.sugarCubes.Add(new SugarCube());
+                        }
+                        break;
+            }
+        }
+    public void BuyIce(Player player)
+    {
+        Console.WriteLine("How many IceCubes would you like to purchase?");
+        Console.WriteLine("100 ice cubes for $0.86");
+        Console.WriteLine("250 ice cubes for $2.14");
+        Console.WriteLine("500 ice cubes for $3.58");
+        string ice = Console.ReadLine();
+
+        switch (ice)
+        {
+            case "100":
+                Console.WriteLine("Adding 100 ice cubes.");
+                for (int i = 0; i < 100; i++)
+                {
+                    player.inventory.iceCubes.Add(new IceCube());
+                }
+                break;
+            case "200":
+                Console.WriteLine("Adding 200 ice cubes.");
+                for (int i = 0; i < 200; i++)
+                {
+                    player.inventory.iceCubes.Add(new IceCube());
+                }
+                break;
+            case "500":
+                Console.WriteLine("Adding 500 ice cubes.");
+                for (int i = 0; i < 500; i++)
+                {
+                    player.inventory.iceCubes.Add(new IceCube());
+                }
+                break;
+        }
     }
 }

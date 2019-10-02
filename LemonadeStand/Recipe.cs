@@ -20,7 +20,7 @@ namespace LemonadeStand
             int amountOfLemons = 0;
             int amountOfSugarCubes = 0;
             int amountOfIceCubes = 0;
-            double pricePerCup = .25;
+            double pricePerCup = 0;
         }
 
         // member methods (CAN DO)
