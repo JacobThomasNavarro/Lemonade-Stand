@@ -198,9 +198,9 @@ namespace LemonadeStand
         }
         public void TheStore()
         {
-            UserInterface.GetUserInput();
-            int choice = UserInterface.GetMenuOption();
-            
+                UserInterface.GetUserInput();
+                int choice = UserInterface.GetMenuOption();
+
             switch (choice)
             {
                 case 1:
@@ -219,8 +219,16 @@ namespace LemonadeStand
                     BuyIce();
                     break;
             }
-
-
+            Console.ReadLine();
+            string input = UserInterface.StoreRunTime();
+            if (input == "yes")
+            {
+                TheStore();
+            }
+            else
+            {
+                Console.ReadLine();
+            }
         }
     }
 }

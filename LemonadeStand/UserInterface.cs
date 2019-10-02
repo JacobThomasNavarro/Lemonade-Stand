@@ -10,7 +10,7 @@ namespace LemonadeStand
     {
         public static void GetUserInput()
         {
-            Console.WriteLine("What would you like to do");
+            Console.WriteLine("What would you like to purchase?");
         }
         public static int GetMenuOption()
         {
@@ -36,5 +36,22 @@ namespace LemonadeStand
         {
             Console.WriteLine("Your 7 days of business start now. Good luck!");
         }
+        public static string StoreRunTime()
+        {
+            Console.WriteLine("Would you like to keep purchasing? - 'yes' or 'no'");
+            string input = Console.ReadLine();
+            return input;
+        }
+        public static void BuildRecipe()
+        {
+            Console.WriteLine("Program your recipe for this round.");
+            Console.WriteLine("Price/Quality Control.");
+        }
+        //public static int MainMenuOption()
+        //{
+        //    Console.WriteLine("Choose an option\n1)View Inventory\n2)Visit Store\n3)Sugar\n4)Ice");
+        //    int choice = Int32.Parse(Console.ReadLine());
+        //    return choice;
+        //}
     }
 }

@@ -32,8 +32,11 @@ namespace LemonadeStand
             playerOne.ChooseName();
 
             UserInterface.PlayTime();
+            Console.ReadLine();
 
+            
             UserInterface.DisplayInventory(playerOne.inventory);
+            Console.ReadLine();
 
             store = new Store(playerOne);
             store.TheStore();
