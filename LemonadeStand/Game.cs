@@ -33,6 +33,8 @@ namespace LemonadeStand
             UserInterface.PlayTime();
 
             UserInterface.DisplayInventory(playerOne.inventory);
+
+            UserInterface.EnterRecipe(playerOne.recipe);
         }
         public int GetNumberOfPlayers()
         {
@@ -45,6 +47,19 @@ namespace LemonadeStand
             if (numberOfPlayers == 1)
             {
                 playerOne = new Player();
+            }
+        }
+        public void MainMenu()
+        {
+            int choice = UserInterface.MainMenuOption();
+            switch (choice)
+            {
+                case 1:
+                    UserInterface.DisplayInventory(playerOne.inventory);
+                    break;
+                case 2:
+                    //do this
+                    break;
             }
         }
     }

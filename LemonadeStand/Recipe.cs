@@ -24,17 +24,6 @@ namespace LemonadeStand
         }
 
         // member methods (CAN DO)
-        public void EnterRecipe()
-        {
-            Console.WriteLine("Please enter this round's recipe.");
-            Console.WriteLine("Price per Cup");
-            pricePerCup = int.Parse(Console.ReadLine());
-            Console.WriteLine("Lemons per Pitcher");
-            amountOfLemons = int.Parse(Console.ReadLine());
-            Console.WriteLine("Sugar per Pitcher");
-            amountOfSugarCubes = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ice per Cup");
-            amountOfIceCubes = int.Parse(Console.ReadLine());
-        }
+        
     }
 }

@@ -14,15 +14,19 @@ namespace LemonadeStand
             int choice = Int32.Parse(Console.ReadLine());
             return choice;
         }
-
-
+        public static int MainMenuOption()
+        {
+            Console.WriteLine("Choose an option 1) Inventory\n2) Store\n3) Recipe");
+            int choice = Int32.Parse(Console.ReadLine());
+            return choice;
+        }
         public static void DisplayInventory(Inventory inventory)
         {
             Console.WriteLine("Current Inventory: ");
             Console.WriteLine("You have " + inventory.lemons.Count + " Lemons");
             Console.WriteLine("You have " + inventory.iceCubes.Count + " IceCubes");
             Console.WriteLine("You have " + inventory.cups.Count + " Cups");
-            Console.WriteLine("You have " + inventory.sugarCubes.Count + "SugarCubes");
+            Console.WriteLine("You have " + inventory.sugarCubes.Count + " SugarCubes");
         }
         public static void DisplayRules()
         {
@@ -33,6 +37,18 @@ namespace LemonadeStand
         public static void PlayTime()
         {
             Console.WriteLine("Your 7 days of business start now. Good luck!");
+        }
+        public static void EnterRecipe(Recipe recipe)
+        {
+            Console.WriteLine("Please enter this round's recipe.");
+            Console.WriteLine("Lemons per Pitcher");
+            recipe.amountOfLemons = Console.ReadLine();
+            Console.WriteLine("Price per Cup");
+            recipe.pricePerCup = int.Parse(Console.ReadLine());
+            Console.WriteLine("Sugar per Pitcher");
+            recipe.amountOfSugarCubes = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ice per Cup");
+            recipe.amountOfIceCubes = int.Parse(Console.ReadLine());
         }
     }
 }
