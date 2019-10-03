@@ -15,6 +15,10 @@ namespace LemonadeStand
         double temperatureChances;
         int strongChance;
         int lowChance;
+        double temperatureProbability;
+        double conditionProbability;
+        double purchaseProbability;
+        double totalProbability;
 
         // constructor
         public Customer()
@@ -25,7 +29,65 @@ namespace LemonadeStand
         // member methods (CAN DO)
         public void TemperatureCondition(Weather weather)
         {
-            if(weather.temperature < 75)
+            if (weather.temperature < 65)
+            {
+                temperatureProbability = 1;
+            }
+            else if (weather.temperature >= 65 && weather.temperature <= 85)
+            {
+                temperatureProbability = 2;
+            }
+            else if(weather.temperature > 85)
+            {
+                temperatureProbability = 3;
+            }
+        }
+        public void WeatherCondition(Weather weather)
+        {
+            if (weather.condition == "Rain")
+            {
+                conditionProbability = .5;
+            }
+            else if (weather.condition == "Wind")
+            {
+                conditionProbability = 1;
+            }
+            else if(weather.condition == "Cloudy")
+            {
+                conditionProbability = 1.5;
+            }
+            else if(weather.condition == "Sunny")
+            {
+                conditionProbability = 3;
+            }
+        }
+        public void PurchaseCondition(Recipe recipe)
+        {
+            if (recipe.pricePerCup <= .25)
+            {
+                purchaseProbability = 5;
+            }
+            else if(recipe.pricePerCup >= .25 && recipe.pricePerCup <= .50)
+            {
+                purchaseProbability = 3;
+            }
+            else if(recipe.pricePerCup > .50)
+            {
+                purchaseProbability = 1;
+            }
+        }
+        public void TheDecision()
+        {
+            totalProbability = (temperatureProbability + conditionProbability + purchaseProbability) /2 ;
+            if(totalProbability > 3.50)
+            {
+
+            }
+            else if(totalProbability >= 2.25 || totalProbability <= 3.50)
+            {
+
+            }
+            else if(totalProbability < 2.25)
             {
 
             }

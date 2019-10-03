@@ -14,13 +14,12 @@ namespace LemonadeStand
         private List<int> temperatureForecast;
         private List<string> weatherConditions;
         public Random rng;
-        //public string predicatedForecast;
 
         // constructor
         public Weather()
         {
-            temperatureForecast = new List<int>() { 60, 65, 70, 75, 80, 85, 90, 95 };
-            weatherConditions = new List<string>() { "Rainy", "Cool", "Hot", "Sunny", "Cloudy" };
+            temperatureForecast = new List<int>() { 55, 60, 65, 70, 75, 80, 85, 90, 95 };
+            weatherConditions = new List<string>() { "Rain", "Wind", "Sunny", "Cloudy" };
             rng = new Random();
         }
 
