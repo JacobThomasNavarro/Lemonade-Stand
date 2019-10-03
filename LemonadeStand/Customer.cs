@@ -11,15 +11,25 @@ namespace LemonadeStand
         // member variables (HAS A)
         private List<string> names;
         public string name;
+        double weatherChances;
+        double temperatureChances;
+        int strongChance;
+        int lowChance;
 
         // constructor
         public Customer()
         {
-            names = new List<string>() { "Bill", "Bob", "Cheryl", "George","Marie", "Fred", "Tom", "Jake", "Sarah", "Kelly" };
+            names = new List<string>() {};
         }
 
         // member methods (CAN DO)
+        public void TemperatureCondition(Weather weather)
+        {
+            if(weather.temperature < 75)
+            {
 
+            }
+        }
 
     }
 }

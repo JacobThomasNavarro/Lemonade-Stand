@@ -26,20 +26,5 @@ namespace LemonadeStand
         // member methods (CAN DO)
         
 
-        public void ChooseMenuOption()
-        {
-         
-            int choice = UserInterface.GetMenuOption();
-            switch (choice)
-            {
-                case 1:
-                    // Do this
-                    break;
-                case 2:
-                    //do this
-                    break;
-            }
-        }
-
     }
 }

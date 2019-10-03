@@ -13,7 +13,10 @@ namespace LemonadeStand
         public List<Customer> customers;
 
         // constructor
-
+        public Day()
+        {
+            customers = new List<Customer>() { };
+        }
 
         // member methods (CAN DO)
 

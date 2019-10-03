@@ -14,6 +14,7 @@ namespace LemonadeStand
         public Recipe recipe;
         List<Day> days;
         int currentDay;
+        public Weather weather;
 
         // constructor
         public Game()
@@ -42,6 +43,10 @@ namespace LemonadeStand
             store = new Store(playerOne);
             store.TheStore();
 
+            weather = new Weather();
+            weather.ForecastTemperature();
+            weather.ForecastCondition();
+
             recipe = new Recipe();
             recipe.TheRecipe(playerOne);
 
@@ -58,6 +63,10 @@ namespace LemonadeStand
             {
                 playerOne = new Player();
             }
+        }
+        public void PlayGame(Recipe theRecipe, Inventory inventory)
+        {
+            //while (recipe.amountOfLemons <=  inventory.lemons && recipe.amountOfIceCubes <= inventory.iceCubes && inventory.sugarCubes <= recipe.amountOfSugarCubes) ;
         }
     }
 }

@@ -20,7 +20,7 @@ namespace LemonadeStand
         public Weather()
         {
             temperatureForecast = new List<int>() { 60, 65, 70, 75, 80, 85, 90, 95 };
-            weatherConditions = new List<string>() { "Rainy", "Cool", "Hot", "Sunny", "Humid", "Cloudy" };
+            weatherConditions = new List<string>() { "Rainy", "Cool", "Hot", "Sunny", "Cloudy" };
             rng = new Random();
         }
 
@@ -30,12 +30,14 @@ namespace LemonadeStand
             int index = rng.Next(temperatureForecast.Count);
             Console.WriteLine("Temperature Forecast " + temperatureForecast[index]);
             temperature = temperatureForecast[index];
+            Console.ReadLine();
         }
         public void ForecastCondition()
         {
             int index = rng.Next(weatherConditions.Count);
-            Console.WriteLine("Weather Condition Forecast " + weatherConditions[index]);
+            Console.WriteLine("Weather Forecast " + weatherConditions[index]);
             condition = weatherConditions[index];
+            Console.ReadLine();
         }
 
     }

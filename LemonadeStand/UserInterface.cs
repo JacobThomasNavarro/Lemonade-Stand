@@ -61,13 +61,13 @@ namespace LemonadeStand
         }
         public static int SugarPerPitcher()
         {
-            Console.WriteLine("Set your sugar per cup.");
+            Console.WriteLine("Set your sugarcubes per cup.");
             int sugar = int.Parse(Console.ReadLine());
             return sugar;
         }
         public static int IcePerCup()
         {
-            Console.WriteLine("Set your ice per cup.");
+            Console.WriteLine("Set your icecubes per cup.");
             int ice = int.Parse(Console.ReadLine());
             return ice;
         }
