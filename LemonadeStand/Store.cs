@@ -220,15 +220,15 @@ namespace LemonadeStand
                     break;
             }
             Console.ReadLine();
-            string input = UserInterface.StoreRunTime();
-            if (input == "yes")
-            {
-                TheStore();
-            }
-            else
-            {
-                Console.ReadLine();
-            }
+            //string input = UserInterface.StoreRunTime();
+            //if (input == "yes")
+            //{
+            //    TheStore();
+            //}
+            //else
+            //{
+            //    Console.ReadLine();
+            //}
         }
     }
 }

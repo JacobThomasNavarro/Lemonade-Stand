@@ -24,6 +24,25 @@ namespace LemonadeStand
         }
 
         // member methods (CAN DO)
-        
+        public void TheRecipe(Player player)
+        {
+            UserInterface.BuildRecipe();
+            double cupPrice = UserInterface.PricePerCup();
+            pricePerCup = cupPrice;
+            Console.ReadLine();
+
+            int lemons = UserInterface.LemonsPerPitcher();
+            amountOfLemons = lemons;
+            Console.ReadLine();
+
+            int sugar = UserInterface.SugarPerPitcher();
+            amountOfSugarCubes = sugar;
+            Console.ReadLine();
+
+            int ice = UserInterface.IcePerCup();
+            amountOfIceCubes = ice;
+            Console.ReadLine();
+
+        }
     }
 }

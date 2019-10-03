@@ -33,7 +33,7 @@ namespace LemonadeStand
             switch (choice)
             {
                 case 1:
-                    // Do this shit
+                    // Do this
                     break;
                 case 2:
                     //do this

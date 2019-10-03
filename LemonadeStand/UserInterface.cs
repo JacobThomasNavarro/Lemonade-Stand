@@ -47,6 +47,30 @@ namespace LemonadeStand
             Console.WriteLine("Program your recipe for this round.");
             Console.WriteLine("Price/Quality Control.");
         }
+        public static double PricePerCup()
+        {
+            Console.WriteLine("Set your price per cup.");
+            double cupPrice = double.Parse(Console.ReadLine());
+            return cupPrice;
+        }
+        public static int LemonsPerPitcher()
+        {
+            Console.WriteLine("Set your lemons per pitcher.");
+            int lemons = int.Parse(Console.ReadLine());
+            return lemons;
+        }
+        public static int SugarPerPitcher()
+        {
+            Console.WriteLine("Set your sugar per cup.");
+            int sugar = int.Parse(Console.ReadLine());
+            return sugar;
+        }
+        public static int IcePerCup()
+        {
+            Console.WriteLine("Set your ice per cup.");
+            int ice = int.Parse(Console.ReadLine());
+            return ice;
+        }
         //public static int MainMenuOption()
         //{
         //    Console.WriteLine("Choose an option\n1)View Inventory\n2)Visit Store\n3)Sugar\n4)Ice");

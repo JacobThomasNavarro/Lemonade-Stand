@@ -11,6 +11,7 @@ namespace LemonadeStand
         // member variables (HAS A)
         public Player playerOne;
         public Store store;
+        public Recipe recipe;
         List<Day> days;
         int currentDay;
 
@@ -40,6 +41,10 @@ namespace LemonadeStand
 
             store = new Store(playerOne);
             store.TheStore();
+
+            recipe = new Recipe();
+            recipe.TheRecipe(playerOne);
+
         }
         public int GetNumberOfPlayers()
         {
