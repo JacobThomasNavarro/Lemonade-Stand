@@ -78,16 +78,16 @@ namespace LemonadeStand
         }
         public void TheDecision()
         {
-            totalProbability = (temperatureProbability + conditionProbability + purchaseProbability) /2 ;
-            if(totalProbability > 3.50)
+            totalProbability = (temperatureProbability + conditionProbability + purchaseProbability);
+            if(totalProbability > 6)
             {
 
             }
-            else if(totalProbability >= 2.25 || totalProbability <= 3.50)
+            else if(totalProbability >= 3 && totalProbability <= 6)
             {
 
             }
-            else if(totalProbability < 2.25)
+            else if(totalProbability < 3)
             {
 
             }

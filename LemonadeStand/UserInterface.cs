@@ -14,7 +14,7 @@ namespace LemonadeStand
         }
         public static int GetMenuOption()
         {
-            Console.WriteLine("Choose an option\n1)Cups\n2)Lemon\n3)Sugar\n4)Ice");
+            Console.WriteLine("Choose an option\n1)Cups\n2)Lemon\n3)Sugar\n4)Ice\n5)Return to Game");
             int choice = Int32.Parse(Console.ReadLine());
             return choice;
         }
