@@ -19,7 +19,12 @@ namespace LemonadeStand
         }
 
         // member methods (CAN DO)
-
-
+        public void AddCustomers()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                customers.Add(new Customer());
+            }
+        }
     }
 }

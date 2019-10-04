@@ -19,11 +19,13 @@ namespace LemonadeStand
         double conditionProbability;
         double purchaseProbability;
         double totalProbability;
+        public Random rng;
 
         // constructor
         public Customer()
         {
             names = new List<string>() {};
+            rng = new Random();
         }
 
         // member methods (CAN DO)
@@ -76,20 +78,32 @@ namespace LemonadeStand
                 purchaseProbability = 1;
             }
         }
-        public void TheDecision()
+        public bool TheDecision()
         {
             totalProbability = (temperatureProbability + conditionProbability + purchaseProbability);
             if(totalProbability > 6)
             {
-
+                if(rng.Next(40, 100) > 50)
+                {
+                    return true;
+                }
+                return false;
             }
-            else if(totalProbability >= 3 && totalProbability <= 6)
+            else if(totalProbability >= 3)
             {
-
+                if(rng.Next(20, 100) > 50)
+                {
+                    return true;
+                }
+                return false;
             }
-            else if(totalProbability < 3)
+            else
             {
-
+                if (rng.Next(0, 100) > 50)
+                {
+                    return true;
+                }
+                return false;
             }
         }
 

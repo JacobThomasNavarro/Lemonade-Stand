@@ -217,7 +217,7 @@ namespace LemonadeStand
                         Console.WriteLine("You don't have enough money!");
                     }
                     break;
-                case "200":
+                case "250":
                     if (player.wallet.Money >= 2.14)
                     {
                         player.wallet.Money -= 2.14;
@@ -225,7 +225,7 @@ namespace LemonadeStand
                         {
                             player.inventory.iceCubes.Add(new IceCube());
                         }
-                        Console.WriteLine("Adding 200 ice cubes.");
+                        Console.WriteLine("Adding 250 ice cubes.");
                     }
                     else
                     {

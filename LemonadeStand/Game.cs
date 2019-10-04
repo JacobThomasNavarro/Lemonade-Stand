@@ -15,11 +15,13 @@ namespace LemonadeStand
         List<Day> days;
         int currentDay;
         public Weather weather;
+        public Day day;
 
         // constructor
         public Game()
         {
             Inventory inventory = new Inventory();
+            days = new List<Day>();
         }
         
         // member methods (CAN DO)
@@ -36,7 +38,6 @@ namespace LemonadeStand
             UserInterface.PlayTime();
             Console.ReadLine();
 
-            
             UserInterface.DisplayInventory(playerOne.inventory);
             Console.ReadLine();
 
@@ -49,6 +50,9 @@ namespace LemonadeStand
 
             recipe = new Recipe();
             recipe.TheRecipe(playerOne);
+
+            day = new Day();
+            day.AddCustomers();
 
         }
         public int GetNumberOfPlayers()
@@ -67,6 +71,13 @@ namespace LemonadeStand
         public void PlayGame(Recipe theRecipe, Inventory inventory)
         {
             //while (recipe.amountOfLemons <=  inventory.lemons && recipe.amountOfIceCubes <= inventory.iceCubes && inventory.sugarCubes <= recipe.amountOfSugarCubes) ;
+        }
+        public void AddDays()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                days.Add(new Day());
+            }
         }
     }
 }
