@@ -16,6 +16,7 @@ namespace LemonadeStand
         int currentDay;
         public Weather weather;
         public Day day;
+        public Customer customers;
 
         // constructor
         public Game()
@@ -38,21 +39,7 @@ namespace LemonadeStand
             UserInterface.PlayTime();
             Console.ReadLine();
 
-            UserInterface.DisplayInventory(playerOne.inventory);
-            Console.ReadLine();
-
-            store = new Store(playerOne);
-            store.TheStore();
-
-            weather = new Weather();
-            weather.ForecastTemperature();
-            weather.ForecastCondition();
-
-            recipe = new Recipe();
-            recipe.TheRecipe(playerOne);
-
-            day = new Day();
-            day.AddCustomers();
+            PlayGame();
 
         }
         public int GetNumberOfPlayers()
@@ -68,9 +55,34 @@ namespace LemonadeStand
                 playerOne = new Player();
             }
         }
-        public void PlayGame(Recipe theRecipe, Inventory inventory)
+        public void PlayGame()
         {
-            //while (recipe.amountOfLemons <=  inventory.lemons && recipe.amountOfIceCubes <= inventory.iceCubes && inventory.sugarCubes <= recipe.amountOfSugarCubes) ;
+            UserInterface.DisplayInventory(playerOne.inventory);
+            Console.ReadLine();
+
+            store = new Store(playerOne);
+            store.TheStore();
+
+            weather = new Weather();
+            weather.ForecastTemperature();
+            weather.ForecastCondition();
+
+            recipe = new Recipe();
+            recipe.TheRecipe(playerOne);
+
+            AddDays();
+
+            day = new Day();
+            day.AddCustomers();
+
+            for (int i = 0; i < days.Count; i++)
+            {
+                for(int j = 0; j < day.customers.Count; j++)
+                {
+                    customers = new Customer();
+                    customers.TheDecision();
+                }
+            }
         }
         public void AddDays()
         {

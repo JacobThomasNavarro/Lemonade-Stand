@@ -272,6 +272,7 @@ namespace LemonadeStand
                 case 4:
                     BuyIce();
                     break;
+
                 case 5:
                     return;
             }
